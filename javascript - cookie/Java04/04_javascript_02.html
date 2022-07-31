@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="UTF-8">
+				<title> Javascript - COOKIES </title>
+
+					<meta name="author" content="Luana Macedo">
+					<meta name="description" content="Criando e recuperando informações do Usuário com cookies">
+					<meta name="keywords" content="aula, JavaScript, html, programação, programação web, cookies">
+
+					<script type="text/javascript">
+						function lerCookie(){
+							alert(document.cookie)
+						}
+
+						function gravarCookie(){
+							var nome = document.getElementById("txtNome").value;
+							document.cookie = "cookie01="+nome;
+							alert("Cookie gravado com Sucesso!")
+						}
+					</script>
+		</head>
+			<body>
+				<input type="text" name="txtNome" id="txtNome">
+				<input type="button" value="Ver Cookies" onclick="lerCookie()" name="btnLer">
+				<input type="button" value="Gravar Cookies" onclick="gravarCookie()" name="btnGravar">
+			</body>
+	</html>

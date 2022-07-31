@@ -1,0 +1,30 @@
+<!DOCTYPE html> <!-- indica versão do HTML -->
+<html> <!-- inicio do arquivo HTML -->
+	<head> <!-- inicio do cabeçalho da página -->
+		<meta charset="UTF-8"> <!-- indicação do grupos de caracteres -->
+		<!-- título da página -->
+		<title> JavaScript - LOGIN </title>
+		<!-- metas tag para o motor de busca do Google -->
+		<meta name="author" content="Luana Macedo">
+		<meta name="description" content="Formulário para LOGIN do Usuário">
+		<meta name="keywords" content="aula, JavaScript, html, programação, programação web, validação">
+		<script type="text/javascript" src="js/script.js"> </script>
+	</head> <!-- final do cabeçalho -->
+	<body> <!-- inicio do corpo da página -->
+		<form name="frmLogin" method="post" action="03_javascript_02.html">
+				<p> Formulário de Login </p>
+				<p> Usuário: <input type="text" name="usuario" id="usuario"/></p>
+				<p> Senha: <input type="password" name="senha" id="senha"/></p>
+				<p>Perfil
+				<select name="perfil">
+					<option value="">Selecione o cargo</option>
+					<option value="programador">Aluno</option>
+					<option value="designer">Responsável</option>
+					<option value="tester">Professor</option>
+					<option value="todas">Administrador</option>
+				</select>
+			</p><label><input type="submit" name="sbt" onclick="return validar()" value='Enviar'/></label>
+		</form>
+
+	</body> <!-- fim do corpo da página -->
+</html> <!-- fim do arquivo HTML 
